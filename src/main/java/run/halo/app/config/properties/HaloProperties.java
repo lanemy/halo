@@ -84,6 +84,10 @@ public class HaloProperties {
 
     private String cacheRedisPassword = "";
 
+    private String cacheRedisHost = "127.0.0.1";
+
+    private int cacheRedisPort = 6379;
+
     /**
      * hazelcast cache store impl
      * memory

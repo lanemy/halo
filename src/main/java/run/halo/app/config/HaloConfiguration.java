@@ -58,6 +58,9 @@ public class HaloConfiguration {
             case "redis":
                 stringCacheStore = new RedisCacheStore(this.haloProperties);
                 break;
+            case "redis-standalone":
+                stringCacheStore = new StandaloneRedisCacheStore(this.haloProperties);
+                break;
             case "memory":
             default:
                 //memory or default
